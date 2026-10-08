@@ -40,3 +40,8 @@ python comparar_planilhas.py
 Informe as duas planilhas quando solicitado.
 
 O relatório será gerado em `relatorio_comparacao.xlsx`.
+
+
+## Exemplo de resultado
+
+![Resumo da comparação](Exemplo_Resultado.png)
