@@ -21,8 +21,6 @@ A versão 2.0 conta com uma interface gráfica que permite selecionar os arquivo
 
 ![Interface do Comparador de Planilhas 2.0](testes/Exemplo_Resultado_v2.png)
 
-*Exemplo de comparação entre duas planilhas utilizando as colunas `Pedido` e `Código` como identificadores.*
-
 ## Como funciona
 
 1. O usuário seleciona as duas planilhas Excel.
