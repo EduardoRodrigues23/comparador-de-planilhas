@@ -1,0 +1,19 @@
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Arquivos gerados pelo PyInstaller
+build/
+dist/
+*.spec
+
+# Relatórios gerados pelo aplicativo
+relatorio_comparacao.xlsx
+~$*.xlsx
+
+# Backups
+*backup*.py
+
+# Arquivos temporários
+*.log
+*.tmp
