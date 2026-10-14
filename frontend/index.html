@@ -5,21 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparador de Planilhas v3.0</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<h1>Comparador de Planilhas</h1>
-<p>Compare duas planilhas Excel de forma simples.</p>
+<main class="container">
+
+
+<header class="cabecalho">
+    <h1>Comparador de Planilhas</h1>
+    <p>Compare duas planilhas Excel e identifique diferenças de forma simples e rápida.</p>
+</header>
+
 
     
-<label for="arquivo_a">Planilha A:</label>
-<input type="file" id="arquivo_a" accept=".xlsx">
 
-<label for="arquivo_b">Planilha B:</label>
-<input type="file" id="arquivo_b" accept=".xlsx">
+
+<section class="area-upload">
+    <div class="upload-card">
+        <input type="file" id="arquivo_a" accept=".xlsx">
+        <label for="arquivo_a">
+            <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+            <strong>Planilha A</strong>
+            <span class="upload-texto" id="nome_arquivo_a">Clique para selecionar</span>
+            <small>Formato .xlsx</small>
+        </label>
+    </div>
+
+    <div class="upload-card">
+        <input type="file" id="arquivo_b" accept=".xlsx">
+        <label for="arquivo_b">
+            <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+            <strong>Planilha B</strong>
+            <span class="upload-texto" id="nome_arquivo_b">Clique para selecionar</span>
+            <small>Formato .xlsx</small>
+        </label>
+    </div>
+</section>
+
+
 
 
 <button type="button" id="btn_comparar">Comparar Planilhas</button>
 
+</main>
 
 <script src="script.js"></script>
 </body>
