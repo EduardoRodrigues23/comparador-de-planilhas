@@ -3,8 +3,19 @@ import tempfile
 from fastapi import FastAPI, UploadFile, File
 from comparar_planilhas import comparar_planilhas
 from fastapi.responses import Response
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["null"],
+    allow_credentials=False,
+    allow_methods=["POST"],
+    allow_headers=["*"],
+)
+
 
 
 @app.get("/")
